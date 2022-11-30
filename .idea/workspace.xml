@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4822a121-4975-4234-ab2b-dce64e597bf5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ie/atu/ThePassenger2022Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ie/atu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ie/atu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ie/atu/ThePassenger2022.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ie/atu/ThePassenger2022.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "Docker"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -58,7 +55,22 @@
       <recent name="ie.atu" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ThePassenger2022Test.setUsr_age">
+  <component name="RunManager" selected="Docker.Dockerfile">
+    <configuration name="ThePassenger2022Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThePassanger2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ie.atu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ie.atu" />
+      <option name="MAIN_CLASS_NAME" value="ie.atu.ThePassenger2022Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ThePassenger2022Test.setUsr_age" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThePassanger2022" />
       <extension name="coverage">
@@ -123,29 +135,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThePassenger2022Test.setUsr_title" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ThePassanger2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ie.atu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ie.atu" />
-      <option name="MAIN_CLASS_NAME" value="ie.atu.ThePassenger2022Test" />
-      <option name="METHOD_NAME" value="setUsr_title" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="passanger:1.0" />
+          <option name="containerName" value="passanger" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="JUnit.ThePassenger2022Test" />
+      <item itemvalue="JUnit.ThePassenger2022Test.setUsr_age" />
+      <item itemvalue="JUnit.ThePassenger2022Test.setUsr_id" />
+      <item itemvalue="JUnit.ThePassenger2022Test.setUsr_name" />
+      <item itemvalue="JUnit.ThePassenger2022Test.setUsr_phone_num" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThePassenger2022Test" />
         <item itemvalue="JUnit.ThePassenger2022Test.setUsr_age" />
         <item itemvalue="JUnit.ThePassenger2022Test.setUsr_phone_num" />
         <item itemvalue="JUnit.ThePassenger2022Test.setUsr_id" />
         <item itemvalue="JUnit.ThePassenger2022Test.setUsr_name" />
-        <item itemvalue="JUnit.ThePassenger2022Test.setUsr_title" />
       </list>
     </recent_temporary>
   </component>
@@ -193,14 +207,33 @@
       <option name="project" value="LOCAL" />
       <updated>1667940024047</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added test methods and updated pom file">
+      <created>1669802399146</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669802399147</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="new commit" />
     <MESSAGE value="added thepassanger class" />
     <MESSAGE value="added setters" />
-    <option name="LAST_COMMIT_MESSAGE" value="added setters" />
+    <MESSAGE value="added test methods and updated pom file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test methods and updated pom file" />
   </component>
 </project>
