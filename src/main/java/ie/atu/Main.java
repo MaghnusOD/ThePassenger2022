@@ -1,39 +1,27 @@
 package ie.atu;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
-        ThePassenger2022 passenger = new ThePassenger2022();
+        List<ThePassenger2022> new_passenger = new ArrayList<>();
+        ThePassenger2022 passenger = new ThePassenger2022("Title", "Name", "id", 123456789l, 21);
 
-        System.out.println("=============================================================" +
-            "\nPlease correctly fill out the below questions: \n\n" +
-            "1. Title\t(Mr, Mrs or Ms)\n" +
-            "2. Name\t(Minimum of 3 characters) \n" +
-            "3. ID\t(Minimum of 10 characters)\n" +
-            "4. Phone number\t(Minimum of 7 digits)\n" +
-            "5. Age\t(Under 16 too young to fly)\n" +
-            "=============================================================");
 
-        System.out.println("Please enter your name (minimum of 3 characters): ");
-        passenger.usr_name = sc.nextLine();
 
-        System.out.println("Please enter your title (Mr, Mrs, Ms): ");
-        passenger.usr_title = sc.nextLine();
+        new_passenger.add(new ThePassenger2022("Mr", "gon", "12345wertyusasd", 123456789l, 12));
+        new_passenger.add(new ThePassenger2022("Ms", "lilian", "sdfg57h13", 456789012l, 31));
+        new_passenger.add(new ThePassenger2022("mrs", "lilith", "jk34yoisdfq1", 1426475874l, 40));
 
-        System.out.println("Please enter your ID (minimum of 10 characters): ");
-        passenger.usr_id = sc.nextLine();
 
-        System.out.println("Please enter your phone number (minimum of 7 characters): ");
-        passenger.usr_phone_num = sc.nextInt();
-
-        System.out.println("Please enter your age (persons below 16 not allowed to fly): ");
-        passenger.usr_age = sc.nextInt();
-
-        System.out.println("\n" + passenger.toString());
-
+        for (ThePassenger2022 nu_pas: new_passenger
+             ) {
+            System.out.println(nu_pas.toString());
+        }
     }
 }
